@@ -6,12 +6,18 @@ Nike API module
 Install the module with: `npm install node-nike`
 
 ```javascript
-var node-nike = require('node-nike');
-node-nike.awesome(); // "awesome"
+var Nike = require('node-nike');
+
+var nike = new Nike(apiToken);
+
+nike.get(endpoint, type, params)
+  .then(function(data) {
+      //do something with that data 
+   })
 ```
 
 ## Documentation
-_(Coming soon)_
+Totally unofficial node wrapper to the nike api.
 
 ## Examples
 _(Coming soon)_
@@ -23,4 +29,4 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 _(Nothing yet)_
 
 ## License
-Copyright (c) 2014 Richard Lucas. Licensed under the MIT license.
+Copyright (c) 2015 Richard Lucas. Licensed under the MIT license.
